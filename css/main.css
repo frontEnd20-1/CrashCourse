@@ -240,3 +240,38 @@ nav ul li a:hover {
     cursor: pointer;
     text-align: right;
 }
+
+@media only screen and (min-width: 650px) {
+    .server {
+        width: 50%;
+    }
+
+    .blue-container ul {
+        display: flex;
+    }
+
+    .gray-container ul {
+        display: flex;
+    }
+
+    nav ul {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 875px){
+    .subhead {
+        margin-bottom: 15%;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .cta {
+        width: 50%;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}

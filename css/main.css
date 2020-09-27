@@ -1,0 +1,204 @@
+
+/*Imported font from google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:400,600');
+
+/*body declarator is usually used for:
+    setting the font-family,
+    changing the page's background color,
+    removing the document margin set by the browser
+    */
+body {
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*em is a relative unit that measures upon the browsers default font-size (usually 16px)*/
+p, blockquote {
+    font-size: .9em;
+    line-height: 1.5em;
+}
+
+ul {
+    list-style-type: none; /* remove the bullets from the list */
+    /*Remove the margins and paddings added by the browser*/
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: .8em 1.2em;
+}
+
+.logo {
+    width: 130px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+.menu {
+    margin-top: 45%;
+    width: 25px;
+}
+
+.server {
+    width: 70%; /* The percentage is calculate from the size of the container class */
+    margin: 2em auto 2em 25%;
+}
+
+h1, .subhead {
+    position: relative; /* Must be relative or absolute in order to be able to use z-index */
+    z-index: 3;
+}
+
+.subhead {
+    font-size: 1.1em;
+}
+
+.blue-container {
+    width: 100%; /* 100% of the browser */
+    background: #00c2ff;
+    color: white;
+    margin-top: 15%;
+    padding: 4em 0 2em;
+    border-top-left-radius: 40px;
+    transform: skewY(-2deg);
+}
+
+.blue-container:before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: #00c2ff;
+    position: absolute;
+    top: -39px;
+    right: 0;
+    z-index: -2;
+}
+
+.blue-container:after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background: white;
+    position: absolute;
+    top: -80px;
+    right: 0;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.blue-container ul {
+    transform: skewY(2deg);
+}
+
+.blue-container ul > li {
+    margin-bottom: 3em;
+}
+
+.blue-container ul > li > p {
+    padding: 0 2em;
+}
+
+.blue-container img {
+    width: 14%;
+}
+
+.blue-container ul li:nth-child(3) img {
+    width: 8%;
+}
+
+.gray-container {
+    background: #f6f6f6;
+    padding: 4em 0 2em;
+    margin-top: -3%;
+}
+
+.gray-container ul li:first-child {
+    margin-bottom: 2em;
+}
+
+/* Removing default browser padding and margin */
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    font-weight: bold;
+    color: #00c2ff;
+}
+
+h2 {
+    margin-top: 7%;
+}
+
+.cta {
+    background: #00cc80;
+    display: block;
+    color: white;
+    border-radius: 20px;
+    padding: .5em;
+    text-decoration: none;
+    font-size: 1.5em;
+    width: calc(100% -1em);
+    margin: 3% auto 7%;
+    position: relative;
+    z-index: 3;
+}
+
+.footer-container {
+    width: 100%;
+    background: #3d444a;
+    color: white;
+    padding: 3em 0;
+    border-top-right-radius: 40px;
+    transform: skewY(2deg);
+}
+
+.footer-container > div {
+    transform: skewY(-2deg);
+}
+
+.footer-container:before {
+    content: "";
+    background: #3d444a;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -39px;
+    left: 0;
+    z-index: -2;
+}
+
+.footer-container:after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background: white;
+    position: absolute;
+    z-index: -1;
+    top: -80px;
+    left: 0;
+    border-radius: 50%;
+}
+
+ul.footer-links {
+    margin: 0 auto;
+}
+
+ul.footer-links li {
+    display: inline-block;
+}
+
+ul.footer-links a {
+    color: #9d9d9d;
+    font-size: .8em;
+}
